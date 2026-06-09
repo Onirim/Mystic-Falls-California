@@ -384,18 +384,20 @@ Ce troisième axe de relation est celui des admirateurs et fans (ou leur version
 
 Vous pouvez générer une relation aléatoirement via cette table. Lancez 1d10 quatre fois : une fois pour l'amitié de départ, pour le désir de départ, pour l'admiration de départ et pour les affinités de départ. Une amitié négative est considéré comme une hostilité.
 
-| 1d10 | Amitié | Désir | Admiration | Affinités |
-| --- | --- | --- | --- | --- |
-| 1 | -3 | 0 | 0 | *Aucune* |
-| 2 | -2 | 0 | 0 | *Aucune* |
-| 3 | -1 | 1 | 1 | *Aucune* |
-| 4 | -1 | 1 | 1 | Amitié |
-| 5 | 0 | 1 | 1 | Désir |
-| 6 | 0 | 2 | 2 | Admiration |
-| 7 | 1 | 2 | 2 | Amitié, admiration |
-| 8 | 1 | 2 | 2 | Amitié, désir |
-| 9 | 2 | 3 | 3 | Désir, admiration |
-| 10 | 3 | 3 | 3 | Amitié, désir, admiration |
+| 1d10 | Positif ou négatif | Positif uniquement |
+| --- | --- | --- |
+| 1 | -3 | 0 |
+| 2 | -2 | 0 |
+| 3 | -1 | 1 |
+| 4 | -1 | 1 |
+| 5 | 0 | 1 |
+| 6 | 0 | 2 |
+| 7 | 1 | 2 |
+| 8 | 1 | 2 |
+| 9 | 2 | 3 |
+| 10 | 3 | 3 |
+
+Pour chaque axe de la relation (amitié, désir et admiration), lancez 1d6. Sur un résultat de 5 ou 6, une affinité existe pour cet axe de relation.
 
 ## Développer une relation
 
