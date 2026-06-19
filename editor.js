@@ -18,7 +18,7 @@ function editChar(id, dataOverride) {
   if (!state.traits)          state.traits          = [];
   if (!state.tags)            state.tags            = [];
   // Niveau : 0 est valide (pas de niveau)
-  if (state.level === undefined || state.level === null) state.level = 0;
+  //if (state.level === undefined || state.level === null) state.level = 0;
   if (editingId && charTagMap[editingId]) {
     state.tags = charTagMap[editingId]
       .map(tid => allTags.find(tg => tg.id === tid))
@@ -32,9 +32,9 @@ function populateEditor() {
   document.getElementById('f-name').value       = state.name || '';
   document.getElementById('f-sub').value        = state.subtitle || '';
   document.getElementById('f-race-class').value = state.race_class || '';
-  document.getElementById('f-level').value      = state.level ?? 0;
-  const lvlDisplay = document.getElementById('level-display');
-  if (lvlDisplay) lvlDisplay.textContent = state.level ?? 0;
+  //document.getElementById('f-level').value      = state.level ?? 0;
+  //const lvlDisplay = document.getElementById('level-display');
+  //if (lvlDisplay) lvlDisplay.textContent = state.level ?? 0;
 
   const pubCb = document.getElementById('f-public');
   if (pubCb) {
@@ -265,7 +265,7 @@ function changeScore(section, idx, delta, event) {
 // NIVEAU (0 = pas de niveau ; peut aller en négatif si besoin)
 // ══════════════════════════════════════════════════════════════
 
-function changeLevel(delta, event) {
+/*function changeLevel(delta, event) {
   const step = (event && event.shiftKey) ? delta * 10 : delta;
   // Niveau minimum : 0 (pas de niveau négatif pour le niveau)
   state.level = Math.max(0, (state.level ?? 0) + step);
@@ -274,7 +274,7 @@ function changeLevel(delta, event) {
   const hidden = document.getElementById('f-level');
   if (hidden) hidden.value = state.level;
   updatePreview();
-}
+}*/
 
 
 // ══════════════════════════════════════════════════════════════
@@ -285,7 +285,7 @@ function updatePreview() {
   state.name       = document.getElementById('f-name').value;
   state.subtitle   = document.getElementById('f-sub').value;
   state.race_class = document.getElementById('f-race-class').value;
-  state.level      = parseInt(document.getElementById('f-level')?.value) ?? 0;
+  //state.level      = parseInt(document.getElementById('f-level')?.value) ?? 0;
   state.description = document.getElementById('f-description')?.value || state.description || '';
   state.background = document.getElementById('f-background')?.value || state.background || '';
 
