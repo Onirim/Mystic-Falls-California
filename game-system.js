@@ -171,29 +171,29 @@ function renderCharSheet(data) {
 const GAME_I18N = {
   fr: {
     // Identité
-    editor_field_subtitle:     'Titre / Occupation',
-    editor_field_subtitle_ph:  'Ex : Guerrier, Mage, Voleur…',
-    editor_field_race_class:   'Race / Classe',
-    editor_field_race_class_ph:'Ex : Elfe Rôdeur, Humain Paladin…',
-    editor_field_level:        'Niveau',
+    editor_field_subtitle:     'Concept',
+    editor_field_subtitle_ph:  'Ex : Geek inspiré, sportif adulé, cancre assumé…',
+    editor_field_race_class:   'Créature',
+    editor_field_race_class_ph:'Ex : Humain, vampire, loup-garou…',
+    editor_field_level:        'Non utilisé',
 
     // Carte roster
     card_level: 'Niv. ',
 
     // Sections fiche
-    section_characteristics: 'Caractéristiques',
+    section_characteristics: 'Résistances',
     section_skills:          'Compétences',
     section_traits:          'Traits',
     section_description:     'Description',
     section_background:      'Background',
 
     // Éditeur — caractéristiques
-    editor_section_characteristics:   'Caractéristiques',
-    editor_char_name_ph:              'Nom complet (ex : Force)',
+    editor_section_characteristics:   'Résistances',
+    editor_char_name_ph:              'Nom complet (ex : Mentale, Physique)',
     editor_char_trigram_ph:           'TRI',
     editor_char_score_label:          'Score',
     editor_char_score_hint:           'Shift+clic : ±10',
-    editor_add_characteristic:        '+ Ajouter une caractéristique',
+    editor_add_characteristic:        '+ Ajouter une résistance',
 
     // Éditeur — compétences
     editor_section_skills:    'Compétences',
@@ -221,7 +221,7 @@ const GAME_I18N = {
   },
 
   en: {
-    editor_field_subtitle:     'Title / Occupation',
+    editor_field_subtitle:     'Concept',
     editor_field_subtitle_ph:  'E.g. Warrior, Mage, Rogue…',
     editor_field_race_class:   'Race / Class',
     editor_field_race_class_ph:'E.g. Elf Ranger, Human Paladin…',
@@ -229,13 +229,13 @@ const GAME_I18N = {
 
     card_level: 'Lv. ',
 
-    section_characteristics: 'Characteristics',
+    section_characteristics: 'Resistances',
     section_skills:          'Skills',
     section_traits:          'Traits',
     section_description:     'Description',
     section_background:      'Background',
 
-    editor_section_characteristics:   'Characteristics',
+    editor_section_characteristics:   'Resistances',
     editor_char_name_ph:              'Full name (e.g. Strength)',
     editor_char_trigram_ph:           'TRI',
     editor_char_score_label:          'Score',
